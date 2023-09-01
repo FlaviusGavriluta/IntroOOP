@@ -1,4 +1,6 @@
-package org.example;
+package org.example.car.tesla;
+
+import org.example.car.Car;
 
 public class Tesla extends Car {
     private String ai;

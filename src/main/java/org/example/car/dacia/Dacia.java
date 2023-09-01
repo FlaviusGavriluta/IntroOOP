@@ -1,4 +1,6 @@
-package org.example;
+package org.example.car.dacia;
+
+import org.example.car.Car;
 
 public class Dacia extends Car {
     private String handle;

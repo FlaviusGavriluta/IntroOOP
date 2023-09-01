@@ -1,14 +1,16 @@
-package org.example;
+package org.example.car;
 
 public abstract class Car {
     private String name;
     private int HP;
     private int speed;
+    private String location;
 
     public Car(String name, int HP, int speed) {
         this.name = name;
         this.HP = HP;
         this.speed = speed;
+        this.location = "home";
     }
 
     public Car(String name, int HP) {
@@ -44,5 +46,23 @@ public abstract class Car {
 
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", HP=" + HP +
+                ", speed=" + speed +
+                ", location='" + location + '\'' +
+                '}';
     }
 }
